@@ -1,0 +1,68 @@
+<div class="container card" style="max-width:400px; margin-top:25px">
+  <br>
+  <h3>Register<button class="btn text-white bg-info float-right" onclick="
+    (async ()=>{
+      try{
+        document.getElementById('err_msg').innerText = ''
+        loader_bg_hide(false)
+        const res = await client_register(
+            document.getElementById('login/username').value,
+            document.getElementById('login/password').value,
+            document.getElementById('login/repassword').value
+          )
+          console.log(res, typeof res, res.username)
+        main.innerHTML = await requestSync('GET', '/main/login')
+        document.getElementById('login/username').value = res.username
+        loader_bg_hide(true)
+
+      }catch(e){
+        loader_bg_hide(true)
+        document.getElementById('err_msg').innerText = (e)
+      }
+    })()
+    ">Submit</button>
+  </h3>
+  <code id="err_msg"></code>
+  <div class="form-group">
+    <label>username</label>
+    <input class="form-control" id="login/username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input class="form-control" type="password" id="login/password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Retype-Password</label>
+    <input class="form-control" type="password" id="login/repassword">
+  </div>
+  <h3><button class="btn text-white bg-info float-right" onclick="
+    (async ()=>{
+      try{
+        document.getElementById('err_msg').innerText = ''
+        loader_bg_hide(false)
+        const res = await client_register(
+            document.getElementById('login/username').value,
+            document.getElementById('login/password').value,
+            document.getElementById('login/repassword').value
+          )
+          console.log(res, typeof res, res.username)
+        main.innerHTML = await requestSync('GET', '/main/login')
+        document.getElementById('login/username').value = res.username
+        loader_bg_hide(true)
+
+      }catch(e){
+        loader_bg_hide(true)
+        document.getElementById('err_msg').innerText = (e)
+      }
+    })()
+    ">Submit</button></h3>
+</div>
+<div class="container" style="max-width:400px; margin-top:25px">
+  <button class="btn text-white btn-lg btn-block bg-dark" onclick="
+    (async ()=>{
+      loader_bg_hide(false)
+      main.innerHTML = await requestSync('GET', '/main/login')
+      loader_bg_hide(true)
+    })()
+  ">Login with Username</button>
+</div>

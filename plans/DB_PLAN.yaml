@@ -1,0 +1,53 @@
+TABLES:
+
+  FILES:
+    uid:
+      - type = <int>
+      - attributes = unsigned
+      - attributes = NOT NULL
+    _id:
+      - type = <int>
+      - attributes = unsigned
+      - attributes = NOT NULL
+      - attributes = AUTO_INCREMENT
+      - attributes = PRIMARY KEY
+    dir_id:
+      - type = <int>
+      - attributes = unsigned
+      - attributes = NOT NULL
+      - especial cases = {if_file_is_user_s_root_dir:0}
+    name:
+      - type = <tinytext>
+      - attributes = NOT NULL
+      - Manual DEFAULT = 'UnNamed'
+    type:
+      - type = <char(0)>
+      - attributes = NOT NULL
+    meta:
+      - type = <JSON>
+
+  CHUNKS:
+    file_id:
+      - type = <int>
+      - attributes = unsigned
+      - attributes = NOT NULL
+    ind:
+      - type = <int>
+      - attributes = unsigned
+      - attributes = NOT NULL
+    data:
+      - type = <LONGBLOB>
+
+  USERS:
+    _id: //this is uid every where
+      - type = <int>
+      - attributes = unsigned
+      - attributes = NOT NULL
+      - attributes = AUTO_INCREMENT
+      - attributes = PRIMARY KEY
+    username:
+      - type = <varchar(32)>
+      - attributes = NOT NULL
+    password:
+      - type = <varchar(32)>
+      - attributes = NOT NULL

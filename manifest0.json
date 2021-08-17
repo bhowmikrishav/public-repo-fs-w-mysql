@@ -1,0 +1,22 @@
+{
+  "DB_CONFIG":{
+    "host"     : "bxovjf1ns0lstx0caqsw-mysql.services.clever-cloud.com",
+    "user"     : "uanrvhxpwdnzt3qf",
+    "password" : "8ao2Etv6FzFOKV8EVKQz",
+    "database" : "bxovjf1ns0lstx0caqsw",
+    "connectTimeout": 300000,
+    "multipleStatements": true
+  },
+  "TABLES":{
+    "CHUNKS":"chunks",
+    "FILES":"files",
+    "USERS":"users"
+  },
+  "FS":{
+    "MAX_CHUNK_SIZE":524288
+  },
+  "TOKENIZERS":{
+    "LOCAL":"*#$*#*243TP-01 (ТП-01) ///}to TP-05 (ТП-/{}to T9i234iP--- (ТП-05)",
+    "UNIVERSAL":"marcopolo"
+  }
+}

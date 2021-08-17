@@ -1,0 +1,21 @@
+{
+  "DB_CONFIG":{
+    "host": "jovialonefile.mysql.database.azure.com",
+    "user": "jovialonefile@jovialonefile",
+    "password": "Password#4",
+    "database": "onefile",
+    "port": 3306
+  },
+  "TABLES":{
+    "CHUNKS":"chunks",
+    "FILES":"files",
+    "USERS":"users"
+  },
+  "FS":{
+    "MAX_CHUNK_SIZE":524288
+  },
+  "TOKENIZERS":{
+    "LOCAL":"*#$*#*243TP-01 (ТП-01) ///}to TP-05 (ТП-/{}to T9i234iP--- (ТП-05)",
+    "UNIVERSAL":"marcopolo"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "/":{"file":"public/index.html", "type":"text/html", "replace":{"{{{version}}}":"FS.aksai"}},
+  "/css/bootstrap4":{"file":"public/BoSp4.css", "type":"text/css"},
+  "/css/riscss.css":{"file":"public/riscss.css", "type":"text/css"},
+  "/js/loader.js":{"file":"public/loader.js", "type":"text/js"},
+  "/main/login":{"file":"public/main/login.html", "type":"text/html"},
+  "/main/register":{"file":"public/main/register.html", "type":"text/html"},
+  "/js/client.js":{"file":"public/fs.aksai.client.js", "type":"text/html"},
+  "/myroot":{"file":"public/showfiles.html", "type":"text/html", "replace":{"{{{version}}}":"FS.aksai"}},
+  "/js/tablecontrol.js":{"file":"public/tablecontrol.js"}
+}

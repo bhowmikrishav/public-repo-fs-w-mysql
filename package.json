@@ -1,0 +1,32 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rishav Bhowmik/-",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "fastify": "^3.3.0",
+    "fastify-cookie": "^4.0.2",
+    "fastify-formbody": "^5.0.0",
+    "fastify-multipart": "^3.2.0",
+    "formidable": "^1.2.2",
+    "inputsync": "^1.0.6",
+    "jimp": "^0.16.0",
+    "jsonwebtoken": "^8.5.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mime-types": "^2.1.27",
+    "mongodb": "^3.6.0",
+    "mysql": "^2.18.1",
+    "qs": "^6.9.4",
+    "redis": "^3.0.2",
+    "redishostsync": "^1.0.1",
+    "socket.io": "^2.3.0"
+  }
+}
